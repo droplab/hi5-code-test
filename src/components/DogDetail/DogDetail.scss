@@ -1,0 +1,85 @@
+@import '../../styles/mixins';
+@import '../../styles/animations';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+#dog-detail
+{
+	@include fullbleed(true);
+	@include absTL();
+	background-color: $COLOR_SCRIM;
+	position: fixed;
+	z-index: 2;
+	visibility: hidden;
+	cursor: pointer !important;
+
+	.content
+	{
+		text-align: center;
+		@include absC();
+		z-index: 1;
+
+		h2 {
+			@include font($font_sans,bold,3em,$white);
+			margin-top: 0;
+			margin-bottom: 0.25em;
+			text-transform: capitalize;
+			text-align: center;
+		}
+
+		.img-container
+		{
+			position: relative;
+
+			.spinner
+			{
+				@include absC();
+				margin-top: 20px;
+				z-index: -1;
+
+				.fa-spinner
+				{
+					color: $COLOR_SPINNER_LIGHT;
+				}
+			}
+		
+			.doggy-pic
+			{
+				display: inline-block;
+				width: auto;
+				height: auto;
+				min-width: 200px;
+				min-height: 200px;
+				max-width: 75vw;
+				max-height: 75vh;
+				border-radius: 10px;
+				overflow: hidden;
+				position: relative;
+			}
+		}
+
+			
+
+		&.loading
+		{
+			
+		}
+	}
+
+	.btn-close
+	{
+		transition: color 0.5s ease 0s;
+		
+		background-color: transparent;
+		@include font($font_sans,bold,2em,$white);
+		border: none;
+		outline: none;
+		@include absTR(40px,40px);
+		cursor: pointer;
+
+		html.no-touch &:hover
+		{
+			color: $COLOR_LINK_HOVER;
+		}
+	}
+}

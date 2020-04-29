@@ -1,0 +1,13 @@
+@import '../../styles/mixins';
+@import '../../styles/animations';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+#dog-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1em;
+}

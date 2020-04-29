@@ -1,0 +1,32 @@
+@import 'mixins';
+@import 'animations';
+@import 'fonts';
+@import 'colors';
+
+@import 'globals';
+
+
+
+#root
+{
+	width: 100vw;
+	height: 100vh;
+	font-size: 1.35vw;
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#main
+{
+	position: relative;
+}
+
+@media(max-width:1600px)
+{
+	#root
+	{	
+		font-size: 1.35rem;
+	}
+}

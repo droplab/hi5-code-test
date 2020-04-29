@@ -1,0 +1,31 @@
+@import-normalize;
+
+@import 'mixins';
+@import 'colors';
+
+*
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+html
+{
+	background:
+	{
+		color: $white;
+	}
+	overflow: hidden;
+}
+
+body 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.tweening
+{
+    transition: none !important;
+}

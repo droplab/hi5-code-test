@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+@import '../../styles/animations';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+.loader
+{
+    @include fullbleed(true);
+    height: 50vh;
+    background-color: $COLOR_LOADER_BG;
+    @include absTL();
+    
+    &__spinner
+    {
+        @include absC();
+
+        .fa-spin
+        {
+            animation-duration: 1.25s !important;
+        }
+    }
+}
