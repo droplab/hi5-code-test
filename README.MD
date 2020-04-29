@@ -1,6 +1,6 @@
 # Hi5 Code Test App
 
-This app was built using create-react-app. Please follow instructions below to install
+This app was built using create-react-app. Usage instructions are below. Running the `start` script will automatically launch a browser window with a development version of the app running.
 
 ### Usage
 ```sh
